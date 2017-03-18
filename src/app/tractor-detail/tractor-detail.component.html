@@ -1,0 +1,63 @@
+<!-- Buttons -->
+<div class="btn-group btn-group-justified" role="group">
+    <div class="btn-group" role="group">
+        <button md-raised-button (click)="editCar()" type="button" class="btn btn-default">Editovat</button>
+    </div>
+    <div *ngIf="broken" class="btn-group" role="group">
+        <button md-raised-button (click)="repairCar()" type="button" class="btn btn-danger">Zadat opravu</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button md-raised-button (click)="setTechnicalRevision()" type="button" class="btn btn-default">Zadat STK
+        </button>
+    </div>
+</div>
+
+<!-- Loader -->
+<div *ngIf="!car" style="margin: auto;width: 50%;padding: 10px;">
+    <md-spinner></md-spinner>
+</div>
+
+<!-- Car info -->
+<div *ngIf="car" class="page-header">
+    <h2 style="text-align:left;float:left;">Detail traktoru
+        <small>{{car?.nickname}}</small>
+    </h2>
+
+    <!-- State label -->
+    <div style="text-align:right;float:right;">
+
+        <!-- Edit state -->
+        <md-select *ngIf="editState && car?.carState" placeholder="Vyberte nový stav">
+            <md-option *ngFor="let state of states" [value]="state.value"
+                       (click)="changeState(state.value)">
+                {{ state.viewValue }}
+            </md-option>
+        </md-select>
+
+        <!-- Show state label if not editing-->
+        <span *ngIf="car?.carState && !editState" mdTooltip="Změnit" [ngSwitch]="car.carState"
+              (click)="editState = true">
+            <h3 *ngSwitchCase="'NEW'"> <span class="label label-info">Nový</span></h3>
+            <h3 *ngSwitchCase="'REGISTRED'"> <span class="label label-info">Registrovný</span></h3>
+            <h3 *ngSwitchCase="'LENDED'"> <span class="label label-primary">Vypůjčený</span></h3>
+            <h3 *ngSwitchCase="'BROKEN'"> <span class="label label-danger">Poškozený</span></h3>
+            <h3 *ngSwitchCase="'IN_GARAGE'"> <span class="label label-success">V garáži</span></h3>
+            <h3 *ngSwitchCase="'DISABLED'"> <span class="label label-default">Vyřazený</span></h3>
+            <span *ngSwitchDefault class="label label-primary"></span>
+        </span>
+    </div>
+
+    <hr style="clear:both;"/>
+
+    <div>
+        <h4><b>Typ:</b> {{car?.type | translateType}}</h4>
+        <h4><b>VIN:</b> {{car?.vin}}</h4>
+        <h4><b>Datum požízení:</b> {{car?.dateOfAcquisition | beautifyMillis}}</h4>
+    </div>
+
+</div>
+
+<cars-revisions-list *ngIf="carId" [carId]="carId" [reloader]="revisionReloader" ></cars-revisions-list>
+
+<cars-repairs-list *ngIf="carId" [carId]="carId" [reloader]="repairReloader" ></cars-repairs-list>
+

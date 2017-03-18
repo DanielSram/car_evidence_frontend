@@ -1,0 +1,36 @@
+<!-- heading with a button-->
+<div>
+    <h2 style="text-align:left;float:left;">Správa klientů</h2>
+    <br/>
+    <button
+            style="text-align:right;float:right;"
+            md-raised-button
+            (click)="createClient()"
+    >Vytvořit klienta
+    </button>
+</div>
+<hr style="clear:both;"/>
+
+<!-- Table -->
+<table class="table table-striped" *ngIf="clients && clients.length">
+    <thead>
+    <tr>
+        <th>Jméno</th>
+        <th>Příjmení / IČO</th>
+        <th>Telefon</th>
+        <th>E-mail</th>
+        <th>Adresa</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let client of clients">
+        <td><a (click)="showDetail(client)">{{client.name}}</a></td>
+        <td>{{client.surname || client.crn}}</td>
+        <td>{{client.phone}}</td>
+        <td>{{client.email}}</td>
+        <td>{{client.address}}</td>
+    </tr>
+</table>
+
+<div *ngIf="!clients || !clients.length" style="margin: auto;width: 50%;padding: 10px;">
+    <md-spinner></md-spinner>
+</div>

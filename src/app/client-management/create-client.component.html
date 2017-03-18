@@ -1,0 +1,53 @@
+<!-- Heading -->
+<h3 *ngIf="createCompany" >Vytvořit právnickou osobu
+    <small (click)="toggleCreationType()" >Vytvořit fyzickou osobu</small>
+</h3>
+<h3 *ngIf="!createCompany" >Vytvořit fyzickou osobu
+    <small (click)="toggleCreationType()" >Vytvořit právnickou osobu</small>
+</h3>
+
+<div *ngIf="!createCompany" class="alert alert-info" role="alert">Pro založení právnické osoby klikněte na 'Vytvořit právnickou osobu'.</div>
+<div *ngIf="createCompany" class="alert alert-info" role="alert">Pro založení fyzické osoby klikněte na 'Vytvořit fyzickou osobu'.</div>
+
+<!-- Form -->
+<form class="form" [formGroup]="newClientForm" (ngSubmit)="createClient()">
+    <div class="form-group">
+        <label for="name">Jméno</label>
+        <input (blur)="checkForm()" required type="text" class="form-control" formControlName="name" id="name">
+    </div>
+    <div *ngIf="!createCompany" class="form-group">
+        <label for="surname">Příjmení</label>
+        <input (blur)="checkForm()" required type="text" class="form-control" formControlName="surname" id="surname">
+    </div>
+    <div required *ngIf="createCompany" class="form-group">
+        <label for="crn">IČO</label>
+        <input (blur)="checkForm()" required type="number" class="form-control" formControlName="crn" id="crn">
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input (blur)="checkForm()" required type="number" class="form-control" formControlName="phone" id="phone">
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" formControlName="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="address">Adresa</label>
+        <input type="text" class="form-control" formControlName="address" id="address">
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group btn-group-justified" role="group">
+
+        <div class="btn-group" role="group">
+            <button md-raised-button (click)="close()"
+                    type="button" class="btn btn-default">Zavřít
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button md-raised-button [disabled]="submitDisabled"
+                    type="submit" class="btn btn-success">Vytvořit
+            </button>
+        </div>
+    </div>
+</form>

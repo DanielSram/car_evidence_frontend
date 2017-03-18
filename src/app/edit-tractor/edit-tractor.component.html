@@ -1,0 +1,15 @@
+<!-- Form inputs -->
+<md-input-container>
+
+    <md-select placeholder="Vyberte nový stav">
+        <md-option *ngFor="let state of states" [value]="state.value">
+            {{ state.viewValue }}
+        </md-option>
+    </md-select>
+
+    <input mdInput placeholder="Favorite food" value="Sushi">
+
+</md-input-container>
+
+<!-- Subbmit -->
+<button md-button (click)="editDone()">Hotovo</button>

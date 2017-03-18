@@ -1,0 +1,22 @@
+<md-spinner *ngIf="!lending"></md-spinner>
+
+<!-- Info -->
+<div *ngIf="lending" class="page-header">
+    <h3>Detail zápůjčky</h3>
+</div>
+<div *ngIf="lending">
+    <h4><b>Klient:</b> {{clientName}}</h4>
+    <h4><b>Od:</b> {{lending.dateFrom | beautifyMillis}}</h4>
+    <h4><b>Do:</b> {{lending.dateTo | beautifyMillis}}</h4>
+    <h4><b>Cena:</b> {{lending.price}} Kč</h4>
+    <h4><b>Typ vozidla:</b> {{carType | translateType}}</h4>
+    <h4><b>VIN:</b> {{carVin}}</h4>
+    <h4><b>Zeměpisná šířka:</b> {{lending.latitude}}</h4>
+    <h4><b>Zeměpisná délka:</b> {{lending.longitude}}</h4>
+</div>
+
+<!-- Close button -->
+<br/>
+<button style="display: block;width: 100%;"  md-raised-button (click)="onClose()"
+        type="button" >Zavřít
+</button>

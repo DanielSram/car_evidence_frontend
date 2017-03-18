@@ -1,0 +1,21 @@
+<md-spinner *ngIf="!client"></md-spinner>
+
+<!-- Info -->
+<div *ngIf="client" class="page-header">
+    <h3>{{client.name}} {{client.surname || client.crn}}
+        <small>
+            {{(client.crn ? 'Právnická' : 'Fyzická') + ' osoba'}}
+        </small>
+    </h3>
+</div>
+<div *ngIf="client">
+    <h4><b>Telefon:</b> {{client.phone}}</h4>
+    <h4><b>Email:</b> {{client.email}}</h4>
+    <h4 *ngIf="client.address" ><b>Adresa:</b> {{client.address}}</h4>
+</div>
+
+<!-- Close button -->
+<br/>
+<button style="display: block;width: 100%;"  md-raised-button (click)="onClose()"
+        type="button" >Zavřít
+</button>

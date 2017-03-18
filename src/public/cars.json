@@ -1,0 +1,947 @@
+[
+  {
+    "id": 1,
+    "type": "RECLAIMER",
+    "vin": "AHTBB3CD001726540",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1187820000000,
+    "dateOfLastTechnicalCheck": 1452380400000,
+    "price": 5200000
+  },
+  {
+    "id": 2,
+    "type": "DREDGING",
+    "vin": "DBAGE6TF081160633",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1087164000000,
+    "dateOfLastTechnicalCheck": 1313272800000,
+    "price": 7000000
+  },
+  {
+    "id": 3,
+    "type": "ROAD_ROLLER",
+    "vin": "GE6DBATF087N2B549",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1405461600000,
+    "dateOfLastTechnicalCheck": 1125093600000,
+    "price": 2200000
+  },
+  {
+    "id": 4,
+    "type": "FORKLIFT",
+    "vin": "JF1GC8LD3WG069214",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1372629600000,
+    "dateOfLastTechnicalCheck": 1432591200000,
+    "price": 3700000
+  },
+  {
+    "id": 5,
+    "type": "SKIDDER",
+    "vin": "JF1GF8LJ4VG044542",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 932594400000,
+    "dateOfLastTechnicalCheck": 1392591600000,
+    "price": 4200000
+  },
+  {
+    "id": 6,
+    "type": "DUMP_TRUCK",
+    "vin": "JMBLYV98WDJ000101",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 991519200000,
+    "dateOfLastTechnicalCheck": 1401660000000,
+    "price": 12500000
+  },
+  {
+    "id": 7,
+    "type": "SKIDDER",
+    "vin": "JMZGG143201184769",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1359759600000,
+    "dateOfLastTechnicalCheck": 978044400000,
+    "price": 3500000
+  },
+  {
+    "id": 8,
+    "type": "TRACTOR",
+    "vin": "JN1AZ34D65M603952",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1136242800000,
+    "dateOfLastTechnicalCheck": 1391814000000,
+    "price": 7900000
+  },
+  {
+    "id": 9,
+    "type": "TRACKED_LOADER",
+    "vin": "JN1AZ34D95M603928",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1073516400000,
+    "dateOfLastTechnicalCheck": 1288044000000,
+    "price": 10000000
+  },
+  {
+    "id": 10,
+    "type": "DUMP_TRUCK",
+    "vin": "JN1GBAZ33U0310164",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 896565600000,
+    "dateOfLastTechnicalCheck": 1387580400000,
+    "price": 3100000
+  },
+  {
+    "id": 11,
+    "type": "LOADER",
+    "vin": "JTEBY99J800170779",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1291935600000,
+    "dateOfLastTechnicalCheck": 1071010800000,
+    "price": 4300000
+  },
+  {
+    "id": 12,
+    "type": "DUMP_TRUCK",
+    "vin": "JTHBF1BL9C5002548",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1017097200000,
+    "dateOfLastTechnicalCheck": 1364767200000,
+    "price": 3400000
+  },
+  {
+    "id": 13,
+    "type": "LOADER",
+    "vin": "JTHGL46F775007757",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 953938800000,
+    "dateOfLastTechnicalCheck": 1380837600000,
+    "price": 3400000
+  },
+  {
+    "id": 14,
+    "type": "ROAD_ROLLER",
+    "vin": "JTHKD5BH902011756",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1261954800000,
+    "dateOfLastTechnicalCheck": 1461016800000,
+    "price": 12700000
+  },
+  {
+    "id": 15,
+    "type": "EXCAVATOR",
+    "vin": "JTJBC11A902436067",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1161554400000,
+    "dateOfLastTechnicalCheck": 1185832800000,
+    "price": 4300000
+  },
+  {
+    "id": 16,
+    "type": "TRACTOR",
+    "vin": "JTMBF32V49D002101",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1391554800000,
+    "dateOfLastTechnicalCheck": 1135897200000,
+    "price": 10900000
+  },
+  {
+    "id": 17,
+    "type": "TRACKED_LOADER",
+    "vin": "JTMBF32V59D002009",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1154210400000,
+    "dateOfLastTechnicalCheck": 1219269600000,
+    "price": 9200000
+  },
+  {
+    "id": 18,
+    "type": "FORKLIFT",
+    "vin": "JTMBF32V69D007669",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1181772000000,
+    "dateOfLastTechnicalCheck": 1324249200000,
+    "price": 11300000
+  },
+  {
+    "id": 19,
+    "type": "TRACKED_LOADER",
+    "vin": "JTMBF32V99D005124",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1001973600000,
+    "dateOfLastTechnicalCheck": 1461362400000,
+    "price": 12000000
+  },
+  {
+    "id": 20,
+    "type": "BULLDOZER",
+    "vin": "JTNBV58EX0J170556",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1351465200000,
+    "dateOfLastTechnicalCheck": 1357858800000,
+    "price": 900000
+  },
+  {
+    "id": 21,
+    "type": "EXCAVATOR",
+    "vin": "KNADB1223W6355692",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1134514800000,
+    "dateOfLastTechnicalCheck": 1382047200000,
+    "price": 9300000
+  },
+  {
+    "id": 22,
+    "type": "DREDGING",
+    "vin": "MHYGDN71T00317627",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1092520800000,
+    "dateOfLastTechnicalCheck": 1398636000000,
+    "price": 1100000
+  },
+  {
+    "id": 23,
+    "type": "DREDGING",
+    "vin": "NMTEX16R30R046690",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1029448800000,
+    "dateOfLastTechnicalCheck": 1397772000000,
+    "price": 2200000
+  },
+  {
+    "id": 24,
+    "type": "RECLAIMER",
+    "vin": "SAJDA42B81PA21969",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1154901600000,
+    "dateOfLastTechnicalCheck": 1266620400000,
+    "price": 4700000
+  },
+  {
+    "id": 25,
+    "type": "BULLDOZER",
+    "vin": "SAJJGAED3AR011334",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1089410400000,
+    "dateOfLastTechnicalCheck": 1189548000000,
+    "price": 6400000
+  },
+  {
+    "id": 26,
+    "type": "DREDGING",
+    "vin": "SAJTW4846LC176243",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1093903200000,
+    "dateOfLastTechnicalCheck": 1285279200000,
+    "price": 5100000
+  },
+  {
+    "id": 27,
+    "type": "DUMP_TRUCK",
+    "vin": "SALLAAA135A327463",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1369864800000,
+    "dateOfLastTechnicalCheck": 1312322400000,
+    "price": 1500000
+  },
+  {
+    "id": 28,
+    "type": "DUMP_TRUCK",
+    "vin": "SALLAAA44AA524647",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 945126000000,
+    "dateOfLastTechnicalCheck": 1241906400000,
+    "price": 2500000
+  },
+  {
+    "id": 29,
+    "type": "TRACTOR",
+    "vin": "SALLAAA44AA532514",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 923781600000,
+    "dateOfLastTechnicalCheck": 1436911200000,
+    "price": 6200000
+  },
+  {
+    "id": 30,
+    "type": "DUMP_TRUCK",
+    "vin": "SALLMAMC46A199700",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 920242800000,
+    "dateOfLastTechnicalCheck": 1445637600000,
+    "price": 8400000
+  },
+  {
+    "id": 31,
+    "type": "BULLDOZER",
+    "vin": "TMAJ38131GJ040115",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1138316400000,
+    "dateOfLastTechnicalCheck": 1248040800000,
+    "price": 1500000
+  },
+  {
+    "id": 32,
+    "type": "TRACKED_LOADER",
+    "vin": "TMBBJ6NH3F4031283",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1253052000000,
+    "dateOfLastTechnicalCheck": 1427497200000,
+    "price": 6700000
+  },
+  {
+    "id": 33,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBBJ6NH4F4015027",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1340488800000,
+    "dateOfLastTechnicalCheck": 1225407600000,
+    "price": 3400000
+  },
+  {
+    "id": 34,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBBJ6NH4F4025668",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1301007600000,
+    "dateOfLastTechnicalCheck": 1380751200000,
+    "price": 6000000
+  },
+  {
+    "id": 35,
+    "type": "TRACKED_LOADER",
+    "vin": "TMBBJ6NH4F4026268",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1336600800000,
+    "dateOfLastTechnicalCheck": 1092780000000,
+    "price": 13000000
+  },
+  {
+    "id": 36,
+    "type": "BULLDOZER",
+    "vin": "TMBBJ6NH5F4013979",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1343599200000,
+    "dateOfLastTechnicalCheck": 1196463600000,
+    "price": 1900000
+  },
+  {
+    "id": 37,
+    "type": "FORKLIFT",
+    "vin": "TMBBJ6NH5F4014534",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 999122400000,
+    "dateOfLastTechnicalCheck": 1405461600000,
+    "price": 5700000
+  },
+  {
+    "id": 38,
+    "type": "FORKLIFT",
+    "vin": "TMBBJ6NH5F4020379",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1196463600000,
+    "dateOfLastTechnicalCheck": 1414364400000,
+    "price": 3100000
+  },
+  {
+    "id": 39,
+    "type": "DREDGING",
+    "vin": "TMBBJ6NH5F4023086",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1327878000000,
+    "dateOfLastTechnicalCheck": 1359068400000,
+    "price": 1400000
+  },
+  {
+    "id": 40,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBBJ6NH5F4024822",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 919033200000,
+    "dateOfLastTechnicalCheck": 1374184800000,
+    "price": 700000
+  },
+  {
+    "id": 41,
+    "type": "FORKLIFT",
+    "vin": "TMBBJ6NH5F4024948",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1036537200000,
+    "dateOfLastTechnicalCheck": 1427238000000,
+    "price": 9100000
+  },
+  {
+    "id": 42,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBJG7NE6F0236237",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1147384800000,
+    "dateOfLastTechnicalCheck": 1306274400000,
+    "price": 1300000
+  },
+  {
+    "id": 43,
+    "type": "TRACTOR",
+    "vin": "TMBJG7NE6F0239462",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1229814000000,
+    "dateOfLastTechnicalCheck": 1386889200000,
+    "price": 3300000
+  },
+  {
+    "id": 44,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBJG7NE6F0241521",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1242856800000,
+    "dateOfLastTechnicalCheck": 1446418800000,
+    "price": 8800000
+  },
+  {
+    "id": 45,
+    "type": "TRACKED_LOADER",
+    "vin": "TMBJG7NE6F0244614",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 934236000000,
+    "dateOfLastTechnicalCheck": 1272146400000,
+    "price": 10500000
+  },
+  {
+    "id": 46,
+    "type": "TRACKED_LOADER",
+    "vin": "TMBJG7NE6F0249022",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 925250400000,
+    "dateOfLastTechnicalCheck": 1444428000000,
+    "price": 4300000
+  },
+  {
+    "id": 47,
+    "type": "ROAD_ROLLER",
+    "vin": "TMBJG7NE6F0250364",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1035151200000,
+    "dateOfLastTechnicalCheck": 1121896800000,
+    "price": 3800000
+  },
+  {
+    "id": 48,
+    "type": "BULLDOZER",
+    "vin": "TMBJJ9NE8F0139067",
+    "carState": "BROKEN",
+    "dateOfAcquisition": 1219528800000,
+    "dateOfLastTechnicalCheck": 1222466400000,
+    "price": 13300000
+  },
+  {
+    "id": 49,
+    "type": "EXCAVATOR",
+    "vin": "TMBJJ9NE8F0140736",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1221170400000,
+    "dateOfLastTechnicalCheck": 1262991600000,
+    "price": 11400000
+  },
+  {
+    "id": 50,
+    "type": "FORKLIFT",
+    "vin": "TMBJJ9NE8F0141336",
+    "carState": "BROKEN",
+    "dateOfAcquisition": 1195772400000,
+    "dateOfLastTechnicalCheck": 1465596000000,
+    "price": 10500000
+  },
+  {
+    "id": 51,
+    "type": "BULLDOZER",
+    "vin": "TMBJJ9NE8F0145628",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 924732000000,
+    "dateOfLastTechnicalCheck": 1132614000000,
+    "price": 8700000
+  },
+  {
+    "id": 52,
+    "type": "FORKLIFT",
+    "vin": "TSMMZC11S00781334",
+    "carState": "BROKEN",
+    "dateOfAcquisition": 1294959600000,
+    "dateOfLastTechnicalCheck": 1401746400000,
+    "price": 13200000
+  },
+  {
+    "id": 53,
+    "type": "ROAD_ROLLER",
+    "vin": "VF1BR1P0H39188658",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1199487600000,
+    "dateOfLastTechnicalCheck": 1391554800000,
+    "price": 7100000
+  },
+  {
+    "id": 54,
+    "type": "FORKLIFT",
+    "vin": "VF1JA1B0521616005",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1058306400000,
+    "dateOfLastTechnicalCheck": 1342389600000,
+    "price": 10300000
+  },
+  {
+    "id": 55,
+    "type": "DREDGING",
+    "vin": "VF1JZ09B346250104",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 933976800000,
+    "dateOfLastTechnicalCheck": 1317333600000,
+    "price": 10800000
+  },
+  {
+    "id": 56,
+    "type": "DREDGING",
+    "vin": "VF1RFE00655606348",
+    "carState": "BROKEN",
+    "dateOfAcquisition": 1263423600000,
+    "dateOfLastTechnicalCheck": 1463954400000,
+    "price": 6700000
+  },
+  {
+    "id": 57,
+    "type": "TRACTOR",
+    "vin": "VF3LJAHXHES161553",
+    "carState": "NEW",
+    "dateOfAcquisition": 1467842400000,
+    "dateOfLastTechnicalCheck": 1468188000000,
+    "price": 5300000
+  },
+  {
+    "id": 58,
+    "type": "EXCAVATOR",
+    "vin": "VSKTVUR20U0262335",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1174258800000,
+    "dateOfLastTechnicalCheck": 1339106400000,
+    "price": 10300000
+  },
+  {
+    "id": 59,
+    "type": "FORKLIFT",
+    "vin": "VSSZZZ1PZ9R035299",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1286229600000,
+    "dateOfLastTechnicalCheck": 1419030000000,
+    "price": 4100000
+  },
+  {
+    "id": 60,
+    "type": "EXCAVATOR",
+    "vin": "VSSZZZ5PZ6R062247",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1169593200000,
+    "dateOfLastTechnicalCheck": 1155765600000,
+    "price": 7000000
+  },
+  {
+    "id": 61,
+    "type": "TRACTOR",
+    "vin": "WAUZZZF43GA061016",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1093039200000,
+    "dateOfLastTechnicalCheck": 1316124000000,
+    "price": 3700000
+  },
+  {
+    "id": 62,
+    "type": "DREDGING",
+    "vin": "WAUZZZ4G1BN029129",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1195340400000,
+    "dateOfLastTechnicalCheck": 1368741600000,
+    "price": 10700000
+  },
+  {
+    "id": 63,
+    "type": "TRACKED_LOADER",
+    "vin": "WAUZZZ8E73A178372",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1029967200000,
+    "dateOfLastTechnicalCheck": 1065564000000,
+    "price": 12400000
+  },
+  {
+    "id": 64,
+    "type": "SKIDDER",
+    "vin": "WBAFW12000C496103",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1367100000000,
+    "dateOfLastTechnicalCheck": 1339365600000,
+    "price": 1900000
+  },
+  {
+    "id": 65,
+    "type": "RECLAIMER",
+    "vin": "WBAKB81079CY51284",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 977785200000,
+    "dateOfLastTechnicalCheck": 1441404000000,
+    "price": 11600000
+  },
+  {
+    "id": 66,
+    "type": "RECLAIMER",
+    "vin": "WBAMX11070C885245",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1205967600000,
+    "dateOfLastTechnicalCheck": 1448578800000,
+    "price": 7600000
+  },
+  {
+    "id": 67,
+    "type": "DUMP_TRUCK",
+    "vin": "WDB1070451A012578",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1017442800000,
+    "dateOfLastTechnicalCheck": 1441404000000,
+    "price": 5800000
+  },
+  {
+    "id": 68,
+    "type": "LOADER",
+    "vin": "WDB2010241A585249",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 947286000000,
+    "dateOfLastTechnicalCheck": 1343599200000,
+    "price": 8600000
+  },
+  {
+    "id": 69,
+    "type": "RECLAIMER",
+    "vin": "WDB2020201A153089",
+    "carState": "BROKEN",
+    "dateOfAcquisition": 1003528800000,
+    "dateOfLastTechnicalCheck": 1243116000000,
+    "price": 2700000
+  },
+  {
+    "id": 70,
+    "type": "FORKLIFT",
+    "vin": "WDB2030421A598116",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1141340400000,
+    "dateOfLastTechnicalCheck": 934840800000,
+    "price": 2400000
+  },
+  {
+    "id": 71,
+    "type": "ROAD_ROLLER",
+    "vin": "WDB2110652A089080",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 987372000000,
+    "dateOfLastTechnicalCheck": 1337292000000,
+    "price": 4500000
+  },
+  {
+    "id": 72,
+    "type": "DREDGING",
+    "vin": "WF0DP3TH2G4115845",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1099868400000,
+    "dateOfLastTechnicalCheck": 1449961200000,
+    "price": 5300000
+  },
+  {
+    "id": 73,
+    "type": "FORKLIFT",
+    "vin": "WF0XXXTTFX8R18499",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1269126000000,
+    "dateOfLastTechnicalCheck": 1460757600000,
+    "price": 5500000
+  },
+  {
+    "id": 74,
+    "type": "LOADER",
+    "vin": "WF05XXWPD57P06582",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1068764400000,
+    "dateOfLastTechnicalCheck": 1206572400000,
+    "price": 10400000
+  },
+  {
+    "id": 75,
+    "type": "DREDGING",
+    "vin": "WME4513341K332960",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 989359200000,
+    "dateOfLastTechnicalCheck": 1367272800000,
+    "price": 4300000
+  },
+  {
+    "id": 76,
+    "type": "DREDGING",
+    "vin": "WMWMF31050TS72216",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1068332400000,
+    "dateOfLastTechnicalCheck": 1296601200000,
+    "price": 11500000
+  },
+  {
+    "id": 77,
+    "type": "SKIDDER",
+    "vin": "WVGZZZ7LZ3D002569",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1128463200000,
+    "dateOfLastTechnicalCheck": 1210716000000,
+    "price": 5000000
+  },
+  {
+    "id": 78,
+    "type": "EXCAVATOR",
+    "vin": "WVWPR13C4EE000044",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1019944800000,
+    "dateOfLastTechnicalCheck": 1394924400000,
+    "price": 8300000
+  },
+  {
+    "id": 79,
+    "type": "TRACTOR",
+    "vin": "WVWZZZ1JZ3D019191",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1111791600000,
+    "dateOfLastTechnicalCheck": 1347487200000,
+    "price": 9400000
+  },
+  {
+    "id": 80,
+    "type": "EXCAVATOR",
+    "vin": "WVWZZZ1KZ7U026611",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1137020400000,
+    "dateOfLastTechnicalCheck": 1454713200000,
+    "price": 5000000
+  },
+  {
+    "id": 81,
+    "type": "FORKLIFT",
+    "vin": "WVWZZZ19ZJW657773",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 924991200000,
+    "dateOfLastTechnicalCheck": 1450047600000,
+    "price": 8400000
+  },
+  {
+    "id": 82,
+    "type": "TRACTOR",
+    "vin": "WVWZZZ3CZ7E096925",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1161813600000,
+    "dateOfLastTechnicalCheck": 1384124400000,
+    "price": 2000000
+  },
+  {
+    "id": 83,
+    "type": "SKIDDER",
+    "vin": "WVWZZZ3C9DE123456",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1351810800000,
+    "dateOfLastTechnicalCheck": 1405893600000,
+    "price": 6600000
+  },
+  {
+    "id": 84,
+    "type": "DUMP_TRUCK",
+    "vin": "WV2ZZZ2KZ9X132334",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1363647600000,
+    "dateOfLastTechnicalCheck": 1334008800000,
+    "price": 1500000
+  },
+  {
+    "id": 85,
+    "type": "BULLDOZER",
+    "vin": "WV2ZZZ7HZ9H070858",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1374703200000,
+    "dateOfLastTechnicalCheck": 1281996000000,
+    "price": 2800000
+  },
+  {
+    "id": 86,
+    "type": "LOADER",
+    "vin": "W0L0TGF4825148187",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 992815200000,
+    "dateOfLastTechnicalCheck": 1450047600000,
+    "price": 6200000
+  },
+  {
+    "id": 87,
+    "type": "TRACTOR",
+    "vin": "W0L0XCF6834210031",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1364079600000,
+    "dateOfLastTechnicalCheck": 1359414000000,
+    "price": 7000000
+  },
+  {
+    "id": 88,
+    "type": "ROAD_ROLLER",
+    "vin": "YV1RS746252479176",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1043017200000,
+    "dateOfLastTechnicalCheck": 1410472800000,
+    "price": 10300000
+  },
+  {
+    "id": 89,
+    "type": "FORKLIFT",
+    "vin": "ZFA126A0008889518",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1383865200000,
+    "dateOfLastTechnicalCheck": 1431813600000,
+    "price": 9500000
+  },
+  {
+    "id": 90,
+    "type": "TRACTOR",
+    "vin": "ZFA126A0018889518",
+    "carState": "DISABLED",
+    "dateOfAcquisition": 978217200000,
+    "dateOfLastTechnicalCheck": 1285365600000,
+    "price": 11100000
+  },
+  {
+    "id": 91,
+    "type": "SKIDDER",
+    "vin": "ZFA126B0008889518",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1400796000000,
+    "dateOfLastTechnicalCheck": 1252447200000,
+    "price": 2500000
+  },
+  {
+    "id": 92,
+    "type": "LOADER",
+    "vin": "ZFA22500000319258",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1266188400000,
+    "dateOfLastTechnicalCheck": 1354834800000,
+    "price": 5700000
+  },
+  {
+    "id": 93,
+    "type": "RECLAIMER",
+    "vin": "1HGFA168X8L087315",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1389567600000,
+    "dateOfLastTechnicalCheck": 1269644400000,
+    "price": 3700000
+  },
+  {
+    "id": 94,
+    "type": "TRACTOR",
+    "vin": "1JBG6E8565W568379",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1110582000000,
+    "dateOfLastTechnicalCheck": 1436738400000,
+    "price": 7700000
+  },
+  {
+    "id": 95,
+    "type": "RECLAIMER",
+    "vin": "1JEPF89EECT044303",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1031090400000,
+    "dateOfLastTechnicalCheck": 1356217200000,
+    "price": 2700000
+  },
+  {
+    "id": 96,
+    "type": "RECLAIMER",
+    "vin": "1J4FJNM82TL216344",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1386370800000,
+    "dateOfLastTechnicalCheck": 1157320800000,
+    "price": 1900000
+  },
+  {
+    "id": 97,
+    "type": "DREDGING",
+    "vin": "1J4FY29P3VP496256",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 936050400000,
+    "dateOfLastTechnicalCheck": 1429048800000,
+    "price": 11300000
+  },
+  {
+    "id": 98,
+    "type": "SKIDDER",
+    "vin": "1J8GA39168L566398",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1384210800000,
+    "dateOfLastTechnicalCheck": 966463200000,
+    "price": 12800000
+  },
+  {
+    "id": 99,
+    "type": "BULLDOZER",
+    "vin": "19XFB2F89EE218157",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1151877600000,
+    "dateOfLastTechnicalCheck": 1048028400000,
+    "price": 600000
+  },
+  {
+    "id": 100,
+    "type": "TRACKED_LOADER",
+    "vin": "3FA6P0HR3DR330543",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1204239600000,
+    "dateOfLastTechnicalCheck": 1425596400000,
+    "price": 10000000
+  },
+  {
+    "id": 101,
+    "type": "FORKLIFT",
+    "vin": "3FA6P0HR8DR330375",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1248127200000,
+    "dateOfLastTechnicalCheck": 1220392800000,
+    "price": 4000000
+  },
+  {
+    "id": 102,
+    "type": "FORKLIFT",
+    "vin": "5FNRL5H66EB078487",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1294786800000,
+    "dateOfLastTechnicalCheck": 1173049200000,
+    "price": 7100000
+  },
+  {
+    "id": 103,
+    "type": "TRACKED_LOADER",
+    "vin": "6FPAAAJGSWCS97164",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1152050400000,
+    "dateOfLastTechnicalCheck": 1278799200000,
+    "price": 4700000
+  },
+  {
+    "id": 104,
+    "type": "LOADER",
+    "vin": "6U90JZS1610014981",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 1261004400000,
+    "dateOfLastTechnicalCheck": 1334700000000,
+    "price": 4800000
+  },
+  {
+    "id": 105,
+    "type": "BULLDOZER",
+    "vin": "7AT0DH2PX15420070",
+    "carState": "IN_GARAGE",
+    "dateOfAcquisition": 989964000000,
+    "dateOfLastTechnicalCheck": 1362438000000,
+    "price": 11400000
+  }
+]

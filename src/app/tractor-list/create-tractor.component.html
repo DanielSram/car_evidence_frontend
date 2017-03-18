@@ -1,0 +1,52 @@
+<!-- Heading -->
+<h3>Přidání nového vozidla</h3>
+<form class="form" [formGroup]="form" (ngSubmit)="createNewCar()">
+
+    <!-- Inputs -->
+    <div class="form-group">
+        <label for="vin">VIN</label>
+        <input required type="text" class="form-control" formControlName="vin" id="vin">
+    </div>
+    <div class="form-group">
+        <label for="dateOfAcquisition">Datum pořízení</label>
+        <input required type="date" class="form-control" formControlName="dateOfAcquisition" id="dateOfAcquisition">
+    </div>
+    <div class="form-group">
+        <label for="price">Cena</label>
+        <input required type="number" class="form-control" formControlName="price" id="price">
+    </div>
+
+    <!-- Car Type selection -->
+    <div class="form-group">
+        <label for="type">Typ vozidla</label>
+        <select data-selected-text-format="static" title="Vyberte typ vozidla" data-live-search="true"
+                required
+                class="selectpicker dropup, form-control" formControlName="type" id="type">>
+            <option></option>
+            <option *ngFor="let carType of carTypes">
+                {{carType.viewValue}}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="nickname">Přezdívka</label>
+        <input type="text" class="form-control" formControlName="nickname" id="nickname">
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group btn-group-justified" role="group">
+
+        <div class="btn-group" role="group">
+            <button md-raised-button (click)="cancelCreating()"
+                    type="button" class="btn btn-default">Zrušit
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button md-raised-button
+                    type="submit"
+                    class="btn btn-success">Uložit
+            </button>
+        </div>
+    </div>
+</form>

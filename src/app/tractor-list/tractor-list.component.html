@@ -1,0 +1,65 @@
+<!-- Buttons -->
+<div class="btn-group btn-group-justified" role="group">
+    <div class="btn-group" role="group">
+        <button md-raised-button (click)="createLending()"
+                type="button" class="btn btn-default">Přidat zápůjčku</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button md-raised-button (click)="createCar()"
+                type="button" class="btn btn-default">Vytvořit vozidlo</button>
+    </div>
+</div>
+
+<div class="tractor-list">
+    <h2>Přehled vozidel</h2>
+
+    <!--<div class="panel panel-default">-->
+        <!-- Default panel contents -->
+        <!--<div class="panel-heading">Seznam vozidel-->
+        <!--</div>-->
+        <div class="panel-body">
+            <form [formGroup]="filterForm" class="tractor-filter" (ngSubmit)="filterTractor()" class="form-inline">
+                <div class="form-group">
+                    <label for="acquiredFrom">Od</label>
+                    <input type="date" class="form-control" formControlName="acquiredFrom" id="acquiredFrom">
+                </div>
+                <div class="form-group">
+                    <label for="acquiredto">Do</label>
+                    <input type="date" class="form-control" formControlName="acquiredTo" id="acquiredTo">
+                </div>
+                <button type="submit" class="btn btn-default">Filtruj</button>
+                <button type="button" class="btn btn-warning" (click)="filtred && getCars()"
+                        [ngClass]="{disabled : !filtred}">
+                    Zruš filtr
+                </button>
+            </form>
+        </div>
+
+        <!-- Table -->
+        <table class="table table-striped" *ngIf="tractorList && tractorList.length">
+            <thead>
+            <tr>
+                <th>Typ</th>
+                <th>Přezdívka</th>
+                <th>VIN</th>
+                <th>Stav</th>
+                <th>Stáří</th>
+            </tr>
+            </thead>
+            <tr *ngFor="let tractor of tractorList">
+                <td>{{tractor.type | translateType}}</td>
+                <td>{{tractor.nickname}}</td>
+                <td>
+                    <a (click)="navigateToCarDetail(tractor.id)">{{tractor.vin}}</a>
+                </td>
+                <td>{{tractor.carState | translateState}}</td>
+                <td>{{calculateAge(tractor.dateOfAcquisition)}}</td>
+            </tr>
+        </table>
+        <p *ngIf="!tractorList || !tractorList.length"><md-spinner></md-spinner></p>
+
+    <!--</div>-->
+
+    <cars-needing-revision></cars-needing-revision>
+
+</div>

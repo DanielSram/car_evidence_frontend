@@ -1,0 +1,26 @@
+<!-- Table -->
+<br>
+<h3>Seznam technických revizí</h3>
+<table class="table table-striped" *ngIf="revisions && revisions.length">
+    <thead>
+    <tr>
+        <th>Datum</th>
+        <th>Výsledek</th>
+        <th>Poznámka</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let revision of revisions">
+        <td>{{revision.checkDate}}</td>
+        <!--<td>{{revision.isPass === 'Y' ? 'V pořádku' : 'Neprošlo'}}</td>-->
+
+        <td>
+            <span *ngIf="revision.isPass === 'Y'" style="text-decoration-color: #006600" >V pořádku</span>
+            <span *ngIf="revision.isPass === 'N'" style="text-decoration-color: crimson" >Neprošlo</span>
+        </td>
+
+        <td>{{revision.description}}</td>
+    </tr>
+</table>
+<div *ngIf="revisions && revisions.length === 0" >
+    Žádné technické revize nebyly nalezeny.
+</div>

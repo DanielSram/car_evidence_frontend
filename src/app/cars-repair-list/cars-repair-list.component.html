@@ -1,0 +1,18 @@
+<!-- Table -->
+<br>
+<h3>Seznam oprav</h3>
+<table class="table table-striped" *ngIf="repairs && repairs.length">
+    <thead>
+    <tr>
+        <th>Cena</th>
+        <th>Poznámka</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let repair of repairs">
+        <td>{{repair.price}} Kč</td>
+        <td>{{repair.description}}</td>
+    </tr>
+</table>
+<div *ngIf="repairs && repairs.length === 0">
+    Žádné opravy nebyly nalezeny.
+</div>

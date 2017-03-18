@@ -1,0 +1,11 @@
+// styles in src/style directory are applied to the whole page
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+body {
+  background-color: beige;
+  color: #222222;
+}
+

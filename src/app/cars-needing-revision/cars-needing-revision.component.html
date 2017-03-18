@@ -1,0 +1,25 @@
+<br>
+<h2>Přehled vozidel, které potřebují technickou kontrolu</h2>
+
+<!-- Table -->
+<table class="table table-striped" *ngIf="cars && cars.length">
+    <thead>
+    <tr>
+        <th>Typ vozidla</th>
+        <th>VIN</th>
+        <th>Datum expirace STK</th>
+        <th>Klient</th>
+        <th>Datum návratu</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let car of cars">
+        <td>{{car.type | translateType}}</td>
+        <td>
+            <a (click)="navigateToCarDetail(car.id)">{{car.vin}}</a>
+        </td>
+        <td>{{car?.expirationDate | beautifyMillis}}</td>
+        <td><a (click)="showLendingDetail(car)">{{car?.clientName}}</a></td>
+        <td>{{car?.returnDate | beautifyMillis}}</td>
+    </tr>
+</table>
+

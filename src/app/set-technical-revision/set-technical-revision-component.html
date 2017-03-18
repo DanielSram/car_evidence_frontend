@@ -1,0 +1,37 @@
+<!-- Heading -->
+<h3>Zadat standardní technickou kontrolu</h3>
+
+<!-- Form -->
+<form class="form" [formGroup]="form" (ngSubmit)="submit()">
+    <br/>
+
+    <div class="form-group">
+        <md-checkbox color="primary" [labelPosition]="before" formControlName="isPass" id="isPass">
+            Vozidlo prošlo technickou kontrolou
+        </md-checkbox>
+    </div>
+
+    <div class="form-group">
+        <label for="checkDate">Datum</label>
+        <input required type="date" class="form-control" formControlName="checkDate" id="checkDate">
+    </div>
+
+    <div *ngIf="!form.value.isPass" class="form-group">
+        <label for="description">Poznámka</label>
+        <input type="text" class="form-control" formControlName="description" id="description">
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group" role="group">
+            <button md-raised-button (click)="close()"
+                    type="button" class="btn btn-default">Zavřít
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button md-raised-button
+                    type="submit" class="btn btn-success">Vytvořit
+            </button>
+        </div>
+    </div>
+</form>

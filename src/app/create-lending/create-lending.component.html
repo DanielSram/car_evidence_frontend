@@ -1,0 +1,152 @@
+<!-- Heading -->
+<h3>Přidat zápůjčku</h3>
+
+<!-- Progress bar -->
+<md-progress-bar value={{progress}}></md-progress-bar>
+<br/>
+
+<!-- Step one form -->
+<form *ngIf="!showStepTwo" class="form" [formGroup]="formGroup" (ngSubmit)="continueToStepTwo()">
+
+    <div class="form-group">
+        <div *ngIf="datesInvalid" class="alert alert-danger" role="alert">Datum 'do' nesmí být před datem 'od'!</div>
+        <label for="dateFrom">Od</label>
+        <input (blur)="checkDateValidity()" required type="date" class="form-control"
+               formControlName="dateFrom" id="dateFrom">
+    </div>
+    <div class="form-group">
+        <label for="dateTo">Do</label>
+        <input (blur)="checkDateValidity()" required type="date" class="form-control"
+               formControlName="dateTo" id="dateTo">
+    </div>
+
+    <!-- Client selection -->
+    <div class="form-group">
+        <label for="client">Klient</label>
+        <select data-selected-text-format="static" title="Vyberte klienta" data-live-search="true"
+                (blur)="findSelectedClient()"
+                class="selectpicker dropup, form-control" formControlName="client" id="client">>
+            <option></option>
+            <option *ngFor="let client of clients">
+                {{client.name}} {{client?.surname}}
+            </option>
+        </select>
+    </div>
+
+    <!-- Car Type selection -->
+    <div class="form-group">
+        <label for="carType">Typ vozidla</label>
+        <select data-selected-text-format="static" title="Vyberte typ vozidla" data-live-search="true"
+                (blur)="findSelectedCarType()"
+                class="selectpicker dropup, form-control" formControlName="carType" id="carType">>
+            <option></option>
+            <option *ngFor="let carType of carTypes">
+                {{carType.viewValue}}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="price">Cena</label>
+        <input (blur)="calculateProgress()" required type="number" class="form-control"
+               formControlName="price" id="price">
+    </div>
+    <div class="form-group">
+        <label for="latitude">Zeměpisná šířka</label>
+        <input (blur)="calculateProgress()" required type="number" class="form-control"
+               formControlName="latitude"
+               id="latitude">
+    </div>
+    <div class="form-group">
+        <label for="longitude">Zeměpisná délka</label>
+        <input (blur)="calculateProgress()" required type="number" class="form-control"
+               formControlName="longitude"
+               id="longitude">
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group btn-group-justified" role="group">
+
+        <div class="btn-group" role="group">
+            <button md-raised-button (click)="redirectBack()"
+                    type="button" class="btn btn-default">Zrušit
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button md-raised-button
+                    type="submit" class="btn btn-success">Pokračovat
+            </button>
+        </div>
+    </div>
+</form>
+
+<!-- Step Two car loader -->
+<div *ngIf="showStepTwo && carsLoading"
+     style="margin: auto;width: 50%;padding: 10px;">
+    <md-spinner></md-spinner>
+</div>
+
+<!-- Step Two -->
+<form *ngIf="showStepTwo && !carsLoading"
+      class="form" [formGroup]="formGroup2" (ngSubmit)="createLending()">
+
+    <!-- If no available cars were found, show error message -->
+    <div *ngIf="cars && cars.length === 0" class="alert alert-danger" role="alert">
+        Nebylo nalezeno žádné vozidlo splňující zadané parametry.
+    </div>
+
+    <!-- Client selection -->
+    <div *ngIf="cars && cars.length > 0" class="form-group">
+        <label for="car">Vozidlo</label>
+        <select data-selected-text-format="static" title="Vyberte vozidlo" data-live-search="true"
+                (blur)="findSelectedCar()"
+                class="selectpicker form-control" formControlName="car" id="car">>
+            <option></option>
+            <option *ngFor="let car of cars">
+                {{car.type | translateType}} - {{car.vin}}
+            </option>
+        </select>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group btn-group-justified" role="group">
+
+        <div class="btn-group" role="group">
+            <button md-raised-button (click)="toggleStepTwo()" type="button" class="btn btn-default">
+                Zpět
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button md-raised-button type="submit" class="btn btn-success"
+                    [disabled]="isSubmitDisabled()">
+                Uložit
+            </button>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

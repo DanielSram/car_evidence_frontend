@@ -1,0 +1,19 @@
+<!-- Always on top, 999 beats focused buttons -->
+<header style="z-index: 999;">
+    <h1> <b>{{title}}</b></h1>
+
+    <nav>
+        <a [routerLink]="['']"><b>Přehled vozidel</b></a>
+        <a [routerLink]="['clients']"><b>Správa klientů</b></a>
+    </nav>
+
+</header>
+
+<main>
+    <div class="container" >
+        <router-outlet></router-outlet>
+    </div>
+</main>
+
+
+
